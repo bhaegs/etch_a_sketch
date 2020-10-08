@@ -5,9 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <script src="main.js" async></script>
 </head>
 <body>
+    <div>
+        <div class="heading">
+            <h1>Etch-a-sketch</h1>
+        </div>
+        <div>
+            <hr width="10%">
+            <br>
+        </div>
+        <div class="subHeading">
+            <p>Project by &nbsp;<strong><a href="https://github.com/bhaegs"><span>Brian Haeger</span></a></strong> &nbsp;in&nbsp;<strong>Vanilla JavaScript for &nbsp;<a href="https://www.theodinproject.com/lessons/etch-a-sketch-project">The Odin Project</a></span></a></strong></p>
+        </div>
+        <div>
+            <br>
+            <hr width="15%">
+        </div>
+    </div>
+
+    <div id="buttonContainer">
+        <label for="">Select Color: &nbsp;</label>
+        <input id="inputColorChange" value="#000000" type="color">
+        <button id="randomColor">Random Color</button>
+        <button id="clearGrid">Reset</button>
+        <input id="resizeGrid" type="number" placeholder="Grid" max="100" min="1" required>
+    </div>
+
+
     <div id="container"></div>
+
+
+    <div id="footer">
+        <p id="copyright" class="noselect">© 2020 Brian Haeger All Rights Reserved</p>
+    </div>
 </body>
 </html>
